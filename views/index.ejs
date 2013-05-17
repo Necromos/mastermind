@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src='/javascripts/jquery.min.js'></script>
+    <script type="text/javascript" src="/javascripts/mastermind.js"></script>
+  </head>
+  <body>
+    <div id="notification">
+      <p id="gameInfo">
+      </p>
+      <p id="notice">
+      </p>
+    </div>
+    <div id="content">
+    	<p>Welcome to <%= title %></p>
+    	<div id="setup">
+    		<form action="">
+    			<label>Ilość elementów:</label><input id="size" type="text" name="size" /><br />
+    			<label>Zakres liczb:</label><input id="dim" type="text" name="dim" /><br />
+    			<label>Maksymalna ilość prób:</label><input id="max" type="text" name="max" /><br />
+    			<input id="start" type="button" name="send" value="Wyślij" />
+    		</form>
+    	</div>
+    </div>
+  </body>
+</html>
